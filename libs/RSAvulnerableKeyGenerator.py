@@ -35,7 +35,9 @@ RSA-keys are Wiener-vulnerable if d < (n^(1/4))/sqrt(6)
 
 """
 
-import random, MillerRabin, Arithmetic
+# Changes made by Ye Shu (@yechs) to adapt imports to repo structure
+from libs import MillerRabin, Arithmetic
+import random
 
 def getPrimePair(bits=512):
     '''
